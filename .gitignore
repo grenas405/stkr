@@ -1,0 +1,13 @@
+node_modules/
+dist/
+dev-dist/
+.wrangler/
+.dev.vars*
+test-results/
+playwright-report/
+*.local
+*.log
+
+# Downloaded and verified by scripts/fetch-model.mjs
+public/models/
+public/ort/

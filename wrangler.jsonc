@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "stkr",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // Every response, including static files, goes through the Worker's security policy.
+    "run_worker_first": true
+  },
+  "observability": { "enabled": false }
+}
